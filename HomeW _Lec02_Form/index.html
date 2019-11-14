@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+        <h1>Please fill the form</h1>
+        <h2>Creating new article</h2>
+        <form action="serverSimulation.html">
+            
+            <div>
+                <label>Article by</label>
+                <input name="articleCreator" type="text"> 
+            </div>
+            <br/>
+            <div>
+                <label>Article Title</label>
+                <input name="articleTitle" type="text">
+             </div>
+            <br/>
+            <div>
+                <label for="addPicture">Select Picture</label>
+                <input id="addPicture" name="mainPicture" type="file" accept="image/*">
+            </div>
+            <br>
+            
+            <div>       
+                <label>Article Body</label>
+                <textarea name="articleBody"></textarea>
+            </div>
+            <br>
+            
+            <label >Image Position</label>
+            <br/>
+            <div>
+                <label for="left">Left</label>
+                <input id="left" type="radio" name="imagePosition" checked>
+            </div>
+            
+            <div> 
+                <label for="right">Right</label>
+                <input id="right" type="radio"  name="imagePosition">
+            </div>  
+            <br>
+            <div>
+                <label for="date">Show Date</labe>
+                <input id="date" type="checkbox" name="hasDate" >
+            </div>
+      
+            <div>
+                <label for="columns">Use two columns</label>
+                <input id="columns" type="checkbox" value="useTwoColumns">
+            </div>
+
+            <button type="submit">Submit Query</button>
+
+        </form>    
+
+</body>
+</html>
